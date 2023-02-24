@@ -1,0 +1,33 @@
+{
+  "contracts": {
+    "NFTStore": "./src/cadence/contracts/NFTStore.cdc",
+    "NFTMarketplace": "./src/cadence/contracts/NFTMarketplace.cdc"
+  },
+  "networks": {
+    "emulator": "127.0.0.1:3569",
+    "mainnet": "access.mainnet.nodes.onflow.org:9000",
+    "sandboxnet": "access.sandboxnet.nodes.onflow.org:9000",
+    "testnet": "access.devnet.nodes.onflow.org:9000"
+  },
+  "accounts": {
+    "emulator-account": {
+      "address": "f8d6e0586b0a20c7",
+      "key": "3af4fbe9fe78ad6259ec6206c08753a0646136ac49b39dce5ce41c57f670dac5"
+    },
+    "testnet-account": {
+      "address": "0xca32d8087fc92d56",
+      "key": {
+        "type": "hex",
+        "index": 0,
+        "signatureAgorithm": "ECDSA_secp256k1",
+        "hashAlgorithm": "SHA3_256",
+        "privateKey": "e9832df73b5f04defc5e98626ab3d975886edbe3b9645f1c968be74660eb36fd"
+      }
+    }
+  },
+  "deployments": {
+    "testnet": {
+      "testnet-account": ["NFTStore", "NFTMarketplace"]
+    }
+  }
+}
