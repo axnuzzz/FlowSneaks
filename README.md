@@ -4,8 +4,10 @@ Sneaker Marketplace built with the Flow blockchain, currently operating on Flow 
 Personal project for learning more about Flow blockchain and writing smart contracts with Cadence.<br/>
 
 To start this project on your local host,
-```sh`
+
+```
 npm run start
+```
 
 and [Open on localhost](http://localhost:3000/nftmarketflow)
 
