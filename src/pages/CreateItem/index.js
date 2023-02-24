@@ -16,6 +16,8 @@ import VuiButton from 'vui-theme/components/VuiButton';
 import VuiInput from 'vui-theme/components/VuiInput';
 import VuiTypography from 'vui-theme/components/VuiTypography';
 
+const ipfsAPIKey = '02ab0ffb87a6956d05dd5f4805f2e742';
+
 export default function CreateItem() {
   const navigate = useNavigate();
   const {

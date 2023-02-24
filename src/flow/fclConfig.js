@@ -6,15 +6,15 @@ export const loadFCLConfig = (env = 'testnet') => {
       fcl
         .config()
         .put('env', env)
-        .put('app.detail.title', 'NFTMarketFlow')
+        .put('app.detail.title', 'FlowSneaks')
         .put('app.detail.icon', 'https://placekitten.com/g/200/200')
         .put('accessNode.api', 'https://rest-testnet.onflow.org')
         .put('discovery.wallet', 'https://fcl-discovery.onflow.org/testnet/authn')
         .put('0xFungibleToken', '0x9a0766d93b6608b7')
         .put('0xNonFungibleToken', '0x631e88ae7f1d7c20')
         .put('0xFlowToken', '0x7e60df042a9c0868')
-        .put('0xNFTStore', '0x3acc4fa9e74dfa02')
-        .put('0xNFTMarketplace', '0x3acc4fa9e74dfa02');
+        .put('0xNFTStore', 'ca32d8087fc92d56')
+        .put('0xNFTMarketplace', 'ca32d8087fc92d56');
     // case 'mainnet':
     //   fcl
     //     .config()
@@ -27,7 +27,7 @@ export const loadFCLConfig = (env = 'testnet') => {
     //     .put('0xFungibleToken', '0x9a0766d93b6608b7')
     //     .put('0xNonFungibleToken', '0x631e88ae7f1d7c20')
     //     .put('0xFlowToken', '0x7e60df042a9c0868')
-    //     .put('0xNFTStore', '0x3acc4fa9e74dfa02')
-    //     .put('0xNFTMarketplace', '0x3acc4fa9e74dfa02');
+    //     .put('0xNFTStore', 'ca32d8087fc92d56')
+    //     .put('0xNFTMarketplace', 'ca32d8087fc92d56');
   }
 };

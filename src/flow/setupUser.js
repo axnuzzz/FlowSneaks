@@ -1,7 +1,7 @@
 import * as fcl from '@onflow/fcl';
-import setupUserCadence from 'cadence/transactions/SetupUser.cdc';
-import { initCollectionAction } from 'state/actions/collectionActions';
-import { setLoadingAction } from 'state/actions/loadingActions';
+import setupUserCadence from '../cadence/transactions/SetupUser.cdc';
+import { initCollectionAction } from '../state/actions/collectionActions';
+import { setLoadingAction } from '../state/actions/loadingActions';
 
 export const setupUser = async (dispatch) => {
   setLoadingAction(dispatch, true, 'Setting up collection...');

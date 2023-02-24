@@ -1,4 +1,4 @@
-import VuiBox from 'vui-theme/components/VuiBox';
+import VuiBox from 'vui-theme/components/VuiBox/index';
 import VuiTypography from 'vui-theme/components/VuiTypography';
 
 export default function ActivityItem({ icon, image, title, dateTime, description }) {

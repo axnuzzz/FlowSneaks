@@ -1,7 +1,7 @@
 import * as fcl from '@onflow/fcl';
 import * as t from '@onflow/types';
-import purchaseNFTCadence from 'cadence/transactions/PurchaseNFT.cdc';
-import { setLoadingAction } from 'state/actions/loadingActions';
+import purchaseNFTCadence from '../cadence/transactions/PurchaseNFT.cdc';
+import { setLoadingAction } from '../state/actions/loadingActions';
 
 export const purchaseNFT = async (ownerAddr, nftID, dispatch) => {
   setLoadingAction(dispatch, true, 'Processing purchase...');

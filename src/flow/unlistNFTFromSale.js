@@ -1,7 +1,7 @@
 import * as fcl from '@onflow/fcl';
 import * as t from '@onflow/types';
-import unlistNFTFromSaleCadence from 'cadence/transactions/UnlistNFTFromSale.cdc';
-import { setLoadingAction } from 'state/actions/loadingActions';
+import unlistNFTFromSaleCadence from '../cadence/transactions/UnlistNFTFromSale.cdc';
+import { setLoadingAction } from '../state/actions/loadingActions';
 
 export const unlistNFTFromSale = async (id, dispatch) => {
   setLoadingAction(dispatch, true, 'Unlisting NFT from sale...');

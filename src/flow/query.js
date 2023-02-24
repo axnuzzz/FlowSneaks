@@ -1,6 +1,6 @@
 import * as fcl from '@onflow/fcl';
 import { loadFCLConfig } from './fclConfig';
-import GetTotalSupplyCadence from 'cadence/scripts/GetTotalSupply.cdc';
+import GetTotalSupplyCadence from '../cadence/scripts/GetTotalSupply.cdc';
 
 export const getTotalSupply = async (contractName = 'TopShot') => {
   return null;

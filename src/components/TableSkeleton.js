@@ -11,8 +11,20 @@ export default function TableSkeleton({ count = 1 }) {
         height={48}
       />
       <Box sx={{ width: '100%', marginLeft: '10px' }}>
-        <Skeleton key={i} sx={{ bgcolor: '#2b3345' }} animation="wave" width="100%" height={25} />
-        <Skeleton key={i} sx={{ bgcolor: '#2b3345' }} animation="wave" width="100%" height={25} />
+        <Skeleton
+          key={`${i}th`}
+          sx={{ bgcolor: '#2b3345' }}
+          animation="wave"
+          width="100%"
+          height={25}
+        />
+        <Skeleton
+          key={`${i}th`}
+          sx={{ bgcolor: '#2b3345' }}
+          animation="wave"
+          width="100%"
+          height={25}
+        />
       </Box>
     </Box>
   ));

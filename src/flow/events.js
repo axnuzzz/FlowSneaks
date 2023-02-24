@@ -36,7 +36,7 @@ const getEvent = async ({ contractAddress, contractName, eventName }) => {
 export const getNFTCreatedEvent = async () => {
   return await getEvent({
     contractName: 'NFTStore',
-    contractAddress: '3acc4fa9e74dfa02', // address without 0x prefix
+    contractAddress: 'ca32d8087fc92d56', // address without 0x prefix
     eventName: 'NFTCreated',
   });
 };
@@ -44,7 +44,7 @@ export const getNFTCreatedEvent = async () => {
 export const getSaleItemListedEvent = async () => {
   return await getEvent({
     contractName: 'NFTMarketplace',
-    contractAddress: '3acc4fa9e74dfa02', // address without 0x prefix
+    contractAddress: 'ca32d8087fc92d56', // address without 0x prefix
     eventName: 'SaleItemListed',
   });
 };
@@ -52,7 +52,7 @@ export const getSaleItemListedEvent = async () => {
 export const getSaleItemRemovedEvent = async () => {
   return await getEvent({
     contractName: 'NFTMarketplace',
-    contractAddress: '3acc4fa9e74dfa02',
+    contractAddress: 'ca32d8087fc92d56',
     eventName: 'SaleItemRemoved',
   });
 };
@@ -60,7 +60,7 @@ export const getSaleItemRemovedEvent = async () => {
 export const getSaleItemPurchasedEvent = async () => {
   return await getEvent({
     contractName: 'NFTMarketplace',
-    contractAddress: '3acc4fa9e74dfa02',
+    contractAddress: 'ca32d8087fc92d56',
     eventName: 'SaleItemPurchased',
   });
 };

@@ -1,8 +1,8 @@
 import * as fcl from '@onflow/fcl';
 import * as t from '@onflow/types';
-import mintNFTCadence from 'cadence/transactions/MintNFT.cdc';
+import mintNFTCadence from '../cadence/transactions/MintNFT.cdc';
 import { NFTStorage } from 'nft.storage';
-import { setLoadingAction } from 'state/actions/loadingActions';
+import { setLoadingAction } from '../state/actions/loadingActions';
 
 const uploadToStorage = async (apiKey, metadata) => {
   const client = new NFTStorage({ token: apiKey });

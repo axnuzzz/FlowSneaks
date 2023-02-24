@@ -57,9 +57,11 @@ export default function DashboardNavbar() {
       <Toolbar sx={(theme) => navbarContainer(theme)}>
         <VuiBox color="inherit" mb={{ xs: 1, md: 0 }} sx={(theme) => navbarRow(theme, {})}>
           <Link to="/">
-            <VuiTypography variant="button" fontWeight="medium" color="white">
-              FlowSneaks
-            </VuiTypography>
+            <img
+              style={{ height: '80px', width: '400px' }}
+              src={require('./logo1.png')}
+              alt=""
+            ></img>
           </Link>
         </VuiBox>
         <VuiBox sx={(theme) => navbarRow(theme, {})}>

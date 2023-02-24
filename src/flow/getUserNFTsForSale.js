@@ -1,8 +1,8 @@
 import * as fcl from '@onflow/fcl';
 import * as t from '@onflow/types';
-import getUserNFTsForSaleCadence from 'cadence/scripts/GetUserNFTsForSale.cdc';
+import getUserNFTsForSaleCadence from '../cadence/scripts/GetUserNFTsForSale.cdc';
 import { setLoadingAction } from 'state/actions/loadingActions';
-import { setSalesCollectionAction } from 'state/actions/salesCollectionActions';
+import { setSalesCollectionAction } from '../state/actions/salesCollectionActions';
 
 export const getUserNFTsForSale = async (dispatch, addr) => {
   if (addr) {

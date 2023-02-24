@@ -1,5 +1,5 @@
 import * as fcl from '@onflow/fcl';
-import { loginUserAction } from 'state/actions/userActions';
+import { loginUserAction } from '../state/actions/userActions';
 
 export const loginWallet = (dispatch) => {
   fcl.authenticate();
